@@ -1,0 +1,24 @@
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700;900&display=swap');
+
+h1 {
+  font-family: 'Playfair Display', serif;
+  /* font-weight: 900; */
+  /* display: flex; */
+}
+.logo {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 19px;
+}
+.hero {
+ display: flex;
+ justify-content: space-between;
+ align-items: center;
+ border-bottom: 3px solid rgb(48, 48, 48);
+}
+.basket {
+    display: flex;
+    align-items: center;
+    font-family: 'Montserrat', sans-serif;
+}
