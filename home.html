@@ -33,14 +33,31 @@
 
     </header>
     <main>
+        <div class="split">
+        <div>
         <div>
             <p>
                 <span>01  Personer</span>—<span>02  Récaptif</span>
             </p>
         </div>
+        <div class="parttwo">
+            <p>
+                VOTRE CRÉATION EST PRÊTE
+            </p>
+            <h2>Votre moment café,
+exactement comme vous l’aimez.</h2>
+        </div>
         <div id="postofcoffe">
         <img src="Aperçu produit en direct.png" alt="post coffee">
         </div>
+       <div class="top-bill parttwo">
+        <div>
+            <h3>Votre café signature</h3>
+            <p>Espresso · M · Avoine · Caramel</p>
+        </div>
+        <a href="">Modifier</a>
+     </div>
+        <div class="partone">
         <p>VOTRE COFFEE SHOP, AUTREMENT.</p>
         <h2>
             Votre pause,
@@ -50,12 +67,15 @@ votre signature.
             Quelques envies, un café unique.
 À vous de composer la suite.
         </p>
-     <section class="price-part">
+        </div>
+    </div>
+    <div>
+     <section class="price-part partone">
         <div class="top-choose">
           <h3>01  La base</h3>
           <p>Choix unique</p>
         </div>
-       <div class="options">
+       <div class="options"  style="display: grid; grid-template-columns: repeat(2,1fr); width: 100vw;">
         <label class="coffe-type">
             <input type="radio" name="my-coffee-choose" checked>
             <div class="choose-card">
@@ -83,14 +103,14 @@ votre signature.
           <h3>02  La taille</h3>
           <p>Choix unique</p>
         </div>
-       <div class="options">
+       <div class="options" style="display: grid; grid-template-columns: repeat(3,1fr); width: 100vw;">
         <label class="coffe-type">
             <input type="radio" name="my-coffee-choose1">
             <div class="choose-card">
                <div class="option-start">
                    <span class="chackmark">✓</span>
                    <span class="type">S · 150 ml</span>
-               </div>
+               </div> 
                <span>Inclus</span>
             </div>
         </label>
@@ -105,9 +125,6 @@ votre signature.
             </div>
         </label>
         <label class="coffe-type">
-            <input type="radio" name="my-coffee-choose">
-        </label>
-        <label class="coffe-type">
             <input type="radio" name="my-coffee-choose1">
             <div class="choose-card">
                <div class="option-start">
@@ -117,13 +134,14 @@ votre signature.
                <span>+ 8,00 DH</span>
             </div>
         </label>
+       </div>
      <!-- </section>
     </main> -->
     <div class="top-choose">
           <h3>03  Le lait</h3>
           <p>Choix unique</p>
         </div>
-       <div class="options">
+       <div class="options"  style="display: grid; grid-template-columns: repeat(3,1fr); width: 100vw;">
         <label class="coffe-type">
             <input type="radio" name="my-coffee-choose2">
             <div class="choose-card">
@@ -154,11 +172,12 @@ votre signature.
                <span>+ 5,00 DH</span>
             </div>
         </label>
+       </div>
         <div class="top-choose">
           <h3>04  La touche en plus</h3>
           <p>Plusieurs choix</p>
         </div>
-       <div class="options">
+       <div class="options"  style="display: grid; grid-template-columns: repeat(2,1fr); width: 100vw;">
         <label class="coffe-type">
             <input type="checkbox" name="my-coffee-choose3" checked>
             <div class="choose-card">
@@ -180,21 +199,16 @@ votre signature.
             </div>
         </label>
        </div>
-
-
+    <p>Le prix évolue selon vos choix. Vous pourrez les modifier au récapitulatif.</p>
+   
      </section>
-     <div class="top-bill">
-        <div>
-            <h3>Votre café signature</h3>
-            <p>Espresso · M · Avoine · Caramel</p>
-        </div>
-        <a href="">Modifier</a>
      </div>
-     <section class="bill">
+     <div>
+     <section class="bill parttwo">
         <span class="bill-tilte">✓  Sélection ajoutée</span>
         <h3>Votre récapitulatif</h3>
         <p>Une création personnalisée · Quantité : 1</p>
-        <table class="table table-condensed">
+        <table>
         <tbody>
           <tr>
             <td><p>Base · Espresso</p></td>
@@ -226,9 +240,11 @@ votre signature.
      ✓ Votre sélection reste modifiable à tout moment.
   </div>
 
-     </section>
      <p>Le prix évolue selon vos choix. Vous pourrez les modifier au récapitulatif.</p>
-     <div class="price-holder">
+</section>
+        </div>
+     </div>
+     <div class="price-holder partone">
         <div>
             <span>
                 Total
@@ -244,4 +260,5 @@ votre signature.
        <p>BRUME — Le goût de votre rythme.</p>
     </footer>
 </body>
+<script src="script.js"></script>
 </html>

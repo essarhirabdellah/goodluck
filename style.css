@@ -40,7 +40,7 @@ p {
     padding: 10px;
 }
 #postofcoffe>img {
-    width: 100vw;
+    width: 100%;
     height: auto;
 }
 #links {
@@ -66,7 +66,7 @@ p {
     border-radius: 5px;
     display: flex;
     flex-direction: column;
-    width: 100vw;
+    /* width: 100vw; */
     margin: 5px;
 }
 .coffe-type input {
@@ -101,10 +101,16 @@ p {
     color: aliceblue;
     padding: 10px;
 }
-.price-part{
+.partone{
     display: none;
 }
-
+.parttwo {
+    display: block;
+}
+footer{
+    position: relative;
+    top: 50vh;
+} 
 footer>p {
     justify-content: center;
     padding: 30px;
@@ -130,4 +136,28 @@ footer>p {
 }
 .top-bill>a{
     color: #394B32;
+}
+td {
+    text-align: start;
+}
+tr {
+    border-bottom: 1px solid slategray ;
+    
+}
+table {
+    width: 100%;
+}
+@media  (orientation: landscape){
+    .split {
+        /* width: 100vw; */
+        display: flex;
+        gap: 10px;
+    }
+     .split>div {
+        flex-grow: 1;
+        height: 70vh;
+    }
+    #links>a {
+        display: inline;
+    }
 }
