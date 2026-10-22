@@ -18,17 +18,28 @@ const config = {
     vanille: { name: "Vanille", price: 3 }
   }
 };
-for(let key in config){
-    // git into each objrct
-    for(let key1 in key){
-        // creat new value for name
-        let name = key1.name
-        // creat new value for price
-        let price = key1.price
-        //git the elments to change it
-        let gitelm1 = document.querySelector("..choose-card>div>span[1]")//fist elm
-        let gitelm2 = document.querySelector(".choose-card")
+//git the elments of name to change it
+let gitallcardsnames = document.querySelectorAll(".choose-card .type")//fist elm
+//creat regex
+//git the elments of name to change it
+let gitallcardsprices = document.querySelectorAll(".choose-card>span")//scond elm
 
-        
-    }
+// creat varble value for go on all crads
+let x = 0
+for (let key in config) {
+  // git into each objrct
+  for (let key1 in config[key]) {
+    // creat new value for name
+    let name = config[key][key1]['name']
+    // creat new value for price
+    let price = config[key][key1]['price']
+    //go on cards one by one and print a new value
+    gitallcardsnames[x].innerHTML = name
+    gitallcardsprices[x].textContent = price + "DH"
+    x++
+
+
+
+
+  }
 }

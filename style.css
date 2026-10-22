@@ -102,15 +102,11 @@ p {
     padding: 10px;
 }
 .partone{
-    display: none;
-}
-.parttwo {
     display: block;
 }
-footer{
-    position: relative;
-    top: 50vh;
-} 
+.parttwo {
+    display: none;
+}
 footer>p {
     justify-content: center;
     padding: 30px;
@@ -155,7 +151,7 @@ table {
     }
      .split>div {
         flex-grow: 1;
-        height: 70vh;
+        /* height: 70vh; */
     }
     #links>a {
         display: inline;
