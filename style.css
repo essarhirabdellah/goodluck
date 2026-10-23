@@ -40,7 +40,7 @@ p {
     padding: 10px;
 }
 #postofcoffe>img {
-    width: 100%;
+    width: auto;
     height: auto;
 }
 #links {
@@ -143,16 +143,17 @@ tr {
 table {
     width: 100%;
 }
+.btn{
+    width: 100%;
+    justify-content: center;
+    color: #E9EEDC;
+    border: none;
+}
 @media  (orientation: landscape){
-    .split {
-        /* width: 100vw; */
+    .split{
         display: flex;
-        gap: 10px;
     }
-     .split>div {
-        flex-grow: 1;
-        /* height: 70vh; */
-    }
+    
     #links>a {
         display: inline;
     }

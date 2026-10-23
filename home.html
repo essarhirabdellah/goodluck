@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+    <!-- <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css"> -->
 
     <title>coffee shope</title>
 </head>
@@ -34,7 +34,7 @@
     </header>
     <main>
         <div class="split">
-        <div>
+        <div class="right">
         <div>
             <p>
                 <span>01  Personer</span>—<span>02  Récaptif</span>
@@ -69,31 +69,31 @@ votre signature.
         </p>
         </div>
     </div>
-    <div>
+    <div class="left">
      <section class="price-part partone">
         <div class="top-choose">
           <h3>01  La base</h3>
           <p>Choix unique</p>
         </div>
-       <div class="options"  style="display: grid; grid-template-columns: repeat(2,1fr); width: 100vw;">
-        <label class="coffe-type">
-            <input type="radio" name="my-coffee-choose" checked>
+       <div class="options check"  style="display: grid; grid-template-columns: repeat(2,1fr); width: 100%,">
+        <label class="coffe-type coffe-type1">
+            <input type="radio" name="my-coffee-choose0" checked>
             <div class="choose-card">
                <div class="option-start">
                    <span class="chackmark">✓</span>
                    <span class="type">Espresso</span>
                </div>
-               <span>18,00 DH</span>
+               <span class="price">18,00 DH</span>
             </div>
         </label>
-         <label class="coffe-type">
-            <input type="radio" name="my-coffee-choose">
+         <label class="coffe-type  coffe-type2">
+            <input type="radio" name="my-coffee-choose0">
             <div class="choose-card">
                <div class="option-start">
                    <span class="chackmark">✓</span>
                    <span class="type">Filtre</span>
                </div>
-               <span>16,00 DH</span>
+               <span class="price">16,00 DH</span>
             </div>
         </label>
        </div>
@@ -103,7 +103,7 @@ votre signature.
           <h3>02  La taille</h3>
           <p>Choix unique</p>
         </div>
-       <div class="options" style="display: grid; grid-template-columns: repeat(3,1fr); width: 100vw;">
+       <div class="options check" style="display: grid; grid-template-columns: repeat(3,1fr); width: 100%;">
         <label class="coffe-type">
             <input type="radio" name="my-coffee-choose1">
             <div class="choose-card">
@@ -111,7 +111,7 @@ votre signature.
                    <span class="chackmark">✓</span>
                    <span class="type">S · 150 ml</span>
                </div> 
-               <span>Inclus</span>
+               <span class="price">Inclus</span>
             </div>
         </label>
          <label class="coffe-type">
@@ -121,7 +121,7 @@ votre signature.
                    <span class="chackmark">✓</span>
                    <span class="type">M · 250 ml</span>
                </div>
-               <span>+ 4,00 DH</span>
+               <span class="price">+ 4,00 DH</span>
             </div>
         </label>
         <label class="coffe-type">
@@ -131,7 +131,7 @@ votre signature.
                    <span class="chackmark">✓</span>
                    <span class="type">L · 350 ml</span>
                </div>
-               <span>+ 8,00 DH</span>
+               <span class="price">+ 8,00 DH</span>
             </div>
         </label>
        </div>
@@ -141,7 +141,7 @@ votre signature.
           <h3>03  Le lait</h3>
           <p>Choix unique</p>
         </div>
-       <div class="options"  style="display: grid; grid-template-columns: repeat(3,1fr); width: 100vw;">
+       <div class="options check"  style="display: grid; grid-template-columns: repeat(3,1fr); width: 100%;">
         <label class="coffe-type">
             <input type="radio" name="my-coffee-choose2">
             <div class="choose-card">
@@ -149,17 +149,17 @@ votre signature.
                    <span class="chackmark">✓</span>
                    <span class="type">Vache</span>
                </div>
-               <span>Inclus</span>
+               <span class="price">Inclus</span>
             </div>
         </label>
          <label class="coffe-type">
             <input type="radio" name="my-coffee-choose2" checked>
-            <div class="choose-card">
+            <div class="choose-card" onclick="">
                <div class="option-start">
                    <span class="chackmark">✓</span>
                    <span class="type">Avoine</span>
                </div>
-               <span>+ 4,00 DH</span>
+               <span class="price">+ 4,00 DH</span>
             </div>
         </label>
         <label class="coffe-type">
@@ -169,7 +169,7 @@ votre signature.
                    <span class="chackmark">✓</span>
                    <span class="type">Amande</span>
                </div>
-               <span>+ 5,00 DH</span>
+               <span class="price">+ 5,00 DH</span>
             </div>
         </label>
        </div>
@@ -177,25 +177,25 @@ votre signature.
           <h3>04  La touche en plus</h3>
           <p>Plusieurs choix</p>
         </div>
-       <div class="options"  style="display: grid; grid-template-columns: repeat(2,1fr); width: 100vw;">
+       <div class="options last"  style="display: grid; grid-template-columns: repeat(2,1fr); width: 100%;">
         <label class="coffe-type">
-            <input type="checkbox" name="my-coffee-choose3" checked>
+            <input type="checkbox" name="my-coffee-choose3i" checked>
             <div class="choose-card">
                <div class="option-start">
                    <span class="chackmark">✓</span>
                    <span class="type">Caramel</span>
                </div>
-               <span>+ 3,00 DH</span>
+               <span class="price">+ 3,00 DH</span>
             </div>
         </label>
          <label class="coffe-type">
-            <input type="checkbox" name="my-coffee-choose3">
+            <input type="checkbox" name="my-coffee-choose3i">
             <div class="choose-card">
                <div class="option-start">
                    <span class="chackmark">✓</span>
                    <span class="type">Vanille</span>
                </div>
-               <span>+ 3,00 DH</span>
+               <span class="price">+ 3,00 DH</span>
             </div>
         </label>
        </div>
@@ -203,7 +203,7 @@ votre signature.
    
      </section>
      </div>
-     <div>
+     <div class="left">
      <section class="bill parttwo">
         <span class="bill-tilte">✓  Sélection ajoutée</span>
         <h3>Votre récapitulatif</h3>
@@ -212,28 +212,28 @@ votre signature.
         <tbody>
           <tr>
             <td><p>Base · Espresso</p></td>
-            <td>18,00 DH</td>
+            <td id="base">18,00 DH</td>
       </tr>
       <tr>
         <td><p>Taille · M / 250 ml</p></td>
-        <td>4,00 DH</td>
+        <td id="taille">4,00 DH</td>
       </tr>
       <tr>
         <td><p>Lait · Avoine</p></td>
-        <td>4,00 DH</td>
+        <td id="lait">4,00 DH</td>
       </tr>
       <tr>
         <td><p>Supplément · Caramel</p></td>
-        <td>3,00 DH</td>
+        <td id="supplements">3,00 DH</td>
       </tr>
     </tbody>
   </table>
   <div class="title-bill">
       <h4>Total</h4>
-      <h4>29,00 DH</h4>
+      <h4 class="total">,00 DH</h4>
   </div>
   <p>Prix de cette sélection · aucun paiement effectué.</p>
-  <button class="btn btn-success btn-lg btn-block" style="background-color: #394B32;">
+  <button class="btn" style="background-color: #394B32;">
     Créer un autre café   →
   </button>
   <div class="well well-lg">
@@ -249,9 +249,9 @@ votre signature.
             <span>
                 Total
             </span>
-              <h3>29,00 DH</h3>
+              <h3 class="totale">29,00 DH</h3>
         </div>
-        <button >
+        <button class="buybtn">
            Ajouter au panier
         </button>
      </div>
@@ -261,4 +261,5 @@ votre signature.
     </footer>
 </body>
 <script src="script.js"></script>
+<script src="total.js"></script>
 </html>
