@@ -34,10 +34,10 @@
     </header>
     <main>
         <div class="split">
-        <div class="right">
+        <div class="imagepart">
         <div>
             <p>
-                <span>01  Personer</span>—<span>02  Récaptif</span>
+                <span id="itm1">01  Personer</span>—<span id="itm2">02  Récaptif</span>
             </p>
         </div>
         <div class="parttwo">
@@ -55,7 +55,7 @@ exactement comme vous l’aimez.</h2>
             <h3>Votre café signature</h3>
             <p>Espresso · M · Avoine · Caramel</p>
         </div>
-        <a href="">Modifier</a>
+        <a href="" class="back">Modifier</a>
      </div>
         <div class="partone">
         <p>VOTRE COFFEE SHOP, AUTREMENT.</p>
@@ -70,7 +70,7 @@ votre signature.
         </div>
     </div>
     <div class="left">
-     <section class="price-part partone">
+     <section class="partone price-part">
         <div class="top-choose">
           <h3>01  La base</h3>
           <p>Choix unique</p>
@@ -104,7 +104,7 @@ votre signature.
           <p>Choix unique</p>
         </div>
        <div class="options check" style="display: grid; grid-template-columns: repeat(3,1fr); width: 100%;">
-        <label class="coffe-type">
+        <label class="coffe-type coffe-type3">
             <input type="radio" name="my-coffee-choose1">
             <div class="choose-card">
                <div class="option-start">
@@ -114,7 +114,7 @@ votre signature.
                <span class="price">Inclus</span>
             </div>
         </label>
-         <label class="coffe-type">
+         <label class="coffe-type coffe-type4">
             <input type="radio" name="my-coffee-choose1" checked>
             <div class="choose-card">
                <div class="option-start">
@@ -124,7 +124,7 @@ votre signature.
                <span class="price">+ 4,00 DH</span>
             </div>
         </label>
-        <label class="coffe-type">
+        <label class="coffe-type coffe-type5">
             <input type="radio" name="my-coffee-choose1">
             <div class="choose-card">
                <div class="option-start">
@@ -142,7 +142,7 @@ votre signature.
           <p>Choix unique</p>
         </div>
        <div class="options check"  style="display: grid; grid-template-columns: repeat(3,1fr); width: 100%;">
-        <label class="coffe-type">
+        <label class="coffe-type coffe-type6">
             <input type="radio" name="my-coffee-choose2">
             <div class="choose-card">
                <div class="option-start">
@@ -152,7 +152,7 @@ votre signature.
                <span class="price">Inclus</span>
             </div>
         </label>
-         <label class="coffe-type">
+         <label class="coffe-type coffe-type7">
             <input type="radio" name="my-coffee-choose2" checked>
             <div class="choose-card" onclick="">
                <div class="option-start">
@@ -162,7 +162,7 @@ votre signature.
                <span class="price">+ 4,00 DH</span>
             </div>
         </label>
-        <label class="coffe-type">
+        <label class="coffe-type coffe-type8">
             <input type="radio" name="my-coffee-choose2">
             <div class="choose-card">
                <div class="option-start">
@@ -203,37 +203,37 @@ votre signature.
    
      </section>
      </div>
-     <div class="left">
+     <div class="leftO">
      <section class="bill parttwo">
         <span class="bill-tilte">✓  Sélection ajoutée</span>
         <h3>Votre récapitulatif</h3>
-        <p>Une création personnalisée · Quantité : 1</p>
+        <p class="onthego">Une création personnalisée · Quantité : 1</p>
         <table>
         <tbody>
           <tr>
-            <td><p>Base · Espresso</p></td>
+            <td><p>Base · <span id="basename">Espresso</span></p></td>
             <td id="base">18,00 DH</td>
       </tr>
       <tr>
-        <td><p>Taille · M / 250 ml</p></td>
+        <td><p>Taille · <span id="taillename">M / 250 ml</span></p></td>
         <td id="taille">4,00 DH</td>
       </tr>
       <tr>
-        <td><p>Lait · Avoine</p></td>
+        <td><p>Lait · <span id="laitname">Avoine</span></p></td>
         <td id="lait">4,00 DH</td>
       </tr>
       <tr>
-        <td><p>Supplément · Caramel</p></td>
+        <td><p>Supplément · <span id="supplementsname">Caramel</span></p></td>
         <td id="supplements">3,00 DH</td>
       </tr>
     </tbody>
   </table>
   <div class="title-bill">
       <h4>Total</h4>
-      <h4 class="total">,00 DH</h4>
+      <h4 class="total">27,00 DH</h4>
   </div>
   <p>Prix de cette sélection · aucun paiement effectué.</p>
-  <button class="btn" style="background-color: #394B32;">
+  <button class="btn back" style="background-color: #394B32;">
     Créer un autre café   →
   </button>
   <div class="well well-lg">
@@ -262,4 +262,5 @@ votre signature.
 </body>
 <script src="script.js"></script>
 <script src="total.js"></script>
+<script src="span.js"></script>
 </html>
