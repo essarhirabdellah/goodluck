@@ -1,0 +1,75 @@
+.card {
+    width: 70vw;
+    height: 70vh;
+    border-radius: 5px;
+    background-color: beige;
+    display: grid;
+    grid-template-columns: 3fr 1fr;
+    gap: 8px;
+    padding: 10px;
+    justify-self: center;
+}
+.card >div {
+    /* background-color: aqua; */
+    border-radius: 8px;
+}
+.add {
+    grid-column: 1/3;
+    background-color:  #394B32;
+    display: inline-grid;
+}
+.buy {
+    grid-column: 1/3;
+    background-color:  #394B32;
+    display: inline-grid;
+}
+h3 { 
+    color: aliceblue;  
+    justify-self: center;
+    align-self: center;
+    margin: 0px;
+}
+.buttons {
+    display: inline-grid;
+    grid-template-rows: 1fr 1fr 1fr;
+    justify-content: center;
+}
+button{
+    background-color: #394B32;
+    color: aliceblue;
+    border-radius: 8px;
+    border: none;
+}
+span{
+    color: rgb(1, 1, 1);
+    justify-self: center;
+    align-self: center;
+}
+.centent{
+    border-radius: 8px;
+    border: 3px solid aliceblue;
+}
+.modul {
+    width: 50vw;
+    height: 50vh;
+    background-color: aliceblue;
+    display: none;
+    grid-template-rows: 1fr 2fr 5fr;
+    padding: 10px;
+    box-shadow: 1px 3px 8px black ;
+    border-radius: 5px;
+    position: fixed;
+    justify-self: center;
+    align-self: end;
+}
+#search {
+    display: inline-grid;
+    width: 100%;
+}
+.modul.pop{
+    display: grid;
+}
+/* .close {
+   align-self: end;
+   justify-self: end;
+} */
