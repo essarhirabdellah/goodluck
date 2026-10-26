@@ -1,0 +1,5 @@
+let modul = document.querySelector(".modul")
+let add = document.querySelector(".add")
+let closepart = document.querySelector(".close")
+add.addEventListener('click',() => modul.classList.add('pop'))
+closepart.addEventListener('click',() => modul.classList.remove('pop'))
