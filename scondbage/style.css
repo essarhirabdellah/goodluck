@@ -1,27 +1,37 @@
-.card {
-    width: 70vw;
-    height: 70vh;
-    border-radius: 5px;
-    background-color: beige;
+.card{
+     width: 70vw;
+     height: 70vh;
+     background-color: beige;
+     border-radius: 5px;
+     display: grid;
+     grid-template-rows: 5fr 1fr;
+     justify-self: center;
+     align-self: center;
+}
+.cardin {
     display: grid;
     grid-template-columns: 3fr 1fr;
     gap: 8px;
     padding: 10px;
     justify-self: center;
 }
-.card >div {
-    /* background-color: aqua; */
-    border-radius: 8px;
+/* .card >div {
+    /* /* background-color: aqua;  */
+.incardadd{
+    
+  display: grid;
+  grid-template-rows: 1fr 1fr;
+  gap: 8px;
 }
 .add {
-    grid-column: 1/3;
     background-color:  #394B32;
     display: inline-grid;
+    border-radius: 5px;
 }
 .buy {
-    grid-column: 1/3;
     background-color:  #394B32;
     display: inline-grid;
+    border-radius: 5px;
 }
 h3 { 
     color: aliceblue;  
@@ -46,8 +56,13 @@ span{
     align-self: center;
 }
 .centent{
+    display: inline-grid;
     border-radius: 8px;
+    
     border: 3px solid aliceblue;
+}
+.content{
+ color: black;
 }
 .modul {
     width: 50vw;
@@ -68,6 +83,16 @@ span{
 }
 .modul.pop{
     display: grid;
+}
+.yscrol{
+    display: grid;
+    grid-template-rows: repeat(5,1fr);
+    overflow-y: auto;
+    gap: 2px;
+}
+.srchln {
+    border-radius: 5px;
+    border: 2px solid black;
 }
 /* .close {
    align-self: end;
