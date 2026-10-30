@@ -1,6 +1,6 @@
 .card{
-     width: 70vw;
-     height: 70vh;
+     width: auto;
+     height: auto;
      background-color: beige;
      border-radius: 5px;
      display: grid;
@@ -33,11 +33,32 @@
     display: inline-grid;
     border-radius: 5px;
 }
-h3 { 
-    color: aliceblue;  
+.total {
+    background-color:  #f7faf7;
+    display: inline-grid;
+    border-radius: 5px;
+}
+#add {
+    color: #f7faf7;
     justify-self: center;
     align-self: center;
     margin: 0px;
+}
+#buy {
+    color: #fbfafa;
+    justify-self: center;
+    align-self: center;
+    margin: 0px;
+}
+#total {
+    color: black;
+    justify-self: center;
+    align-self: center;
+    margin: 0px;
+}
+h3 { 
+    color: rgb(7, 7, 7);  
+    
 }
 .buttons {
     display: inline-grid;
@@ -94,7 +115,26 @@ span{
     border-radius: 5px;
     border: 2px solid black;
 }
+.srchln.hide{
+    display: none;
+}
 /* .close {
    align-self: end;
    justify-self: end;
 } */
+form{
+    width: 80vw;
+    height: 30vh;
+    background-color: #f7faf7;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    gap: 0px;
+    position: fixed;
+    bottom: 50px;
+    justify-self: center;
+    align-self: center;
+}
+.date {
+    
+}

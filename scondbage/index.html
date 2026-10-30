@@ -10,16 +10,17 @@
     <main>
         <div class="card">
         <div class="cardin">
-        <div class="centent"></div>
-        <div class="buttons"><button class="plus">+</button><span class="count">0</span><button class="min">-</button></div>
-        <div class="centent"></div>
-        <div class="buttons"><button class="plus1">+</button><span class="count1">0</span><button class="min1">-</button></div>
-        <div class="centent"></div>
-        <div class="buttons"><button class="plus2">+</button><span class="count2">0</span><button class="min2">-</button></div>
+        <div class="centent global"></div>
+        <div class="buttons globalbtn"><button class="plus0">+</button><span class="count0">0</span><button class="min0">-</button></div>
+        <div class="centent global"></div>
+        <div class="buttons globalbtn"><button class="plus1">+</button><span class="count1">0</span><button class="min1">-</button></div>
+        <div class="centent global"></div>
+        <div class="buttons globalbtn"><button class="plus2">+</button><span class="count2">0</span><button class="min2">-</button></div>
         </div>
         <div class="incardadd">
-        <div class="add"><h3>add</h3></div>
-        <div class="buy"><h3>buy</h3></div>
+         <div class="total"><h3 id="total">total: <span id="total"></span></h3></div>
+        <div class="add"><h3 id="add">add</h3></div>
+        <div class="buy"><h3 id="buy">buy</h3></div>
         </div>
        </div>
        <div class="modul">
@@ -27,15 +28,35 @@
            <span class="close">close</span>
            </div>
            <div>
-           <input type="search" name="" id="search" placeholder="search...">
+            <label for="">
+           <input type="search" name="" id="search" placeholder="search..." search-input>
+           </label>
           </div>
           <div class="yscrol">
-
+             
           </div>
+       </div>
+       <div class="debtcard">
+        <form action="">
+            
+            <div class="date">
+            <label for="date">card number:</label><br>
+            <input type="text" id="numbercard" placeholder="1234 1234 1234 1234">
+            </div>
+            <div>
+            <label for="Expiration-date">Expiration date:</label><br>
+            <input type="text" id="Expiration-date" placeholder="MM/YY">
+            </div>
+            <div>
+            <label for="Security-code">Security code:</label><br>
+            <input type="text" id="Security-code" placeholder="CVC">
+            </div>
+        </form>
        </div>
     </main>
 </body>
 <script src="popover.js"></script>
 <script src="min_and_plus.js"></script>
 <script src="print.js"></script>
+<script src="total.js"></script>
 </html>

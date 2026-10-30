@@ -19,51 +19,97 @@ let coffeeCart = [
   { id: "c3", name: "Latte Caramel", price: 4.50, quantity: 1, image: "latte.jpg" },
   { id: "c8", name: "Mug Isotherme Noir", price: 15.00, quantity: 1, image: "mug.jpg" }
 ];
-let newlist = [];
 
 
 
 let allofcont = document.querySelectorAll(".centent")
-for(let i = 0;i < 3;i++){
-     allofcont[i].innerHTML = `<h3 class="content">Name : ${coffeeCart[i].name} price : ${coffeeCart[i].price} DH</h3>`
+for(let i = 0;i < coffeeCart.length ;i++){
+     allofcont[i].innerHTML = `<h3 class="content">Name : ${coffeeCart[i].name} price :  <span class="price"> ${coffeeCart[i].price}</span>DH</h3>`
 }
 // for(let i = 0;i < newlist.length;i++){
-//      let newone = Document.createElement('div')
+//      let newone = document.createElement('div')
 //      newone.className = 'centent'
-
 //      newone.innerHTML = `<h3 class="content">Name : ${coffeeCart[i].name} price : ${coffeeCart[i].price} DH</h3>`
 // }
 
 
 let scrolcontex = document.querySelector(".yscrol")
+let num = 0;
+// let srchlist = []
+let yop = 3;
 for(let elm of  coffeeProducts){
-   
+  //  let obj = {} 
    let inside = document.createElement('div')
    inside.innerHTML = `<p>Name : ${elm.name} price: ${elm.price} DH</p>`
    inside.className = "srchln"
+   inside.classList.add(`srchln${num}`)
    scrolcontex.appendChild(inside)
-   
+  //  obj.name = elm.name
+  //  obj.price = elm.price
+   elm.class = `srchln${num}`
+  //  console.log(obj)
+  //  srchlist.push(obj)
+   num++
    inside.addEventListener('click',()=>{
      let modul = document.querySelector(".modul")
      modul.classList.remove('pop')
-     let newitem = elm
-     newitem.quantity = 1 
-     newlist.push(newitem)
-    //  let orginal = document.querySelector('.cardin')
-    //  let newone = document.createElement('div')
-    //  newone.className = 'centent'
-    //  let new2 = document.createElement('div')
-    //  new2.className = 'buttons'
-    //  newone.innerHTML = `<h3 class="content">Name : ${elm.name} price : ${elm.price} DH</h3> `
-    //  new2.innerHTML = `
-    //     <div class="buttons"><button class="plus">+</button><s="count">0</span><button class="min">-</button></div>
-    //  `
-    //  orginal.appendChild(newone)
-    //  orginal.appendChild(new2)
+     let newitem = `<h3>Name : ${elm.name} price: <span class="price">${elm.price}</span> DH</h3>`
+     let newone = document.createElement('div')
+     let orginal = document.querySelector('.cardin')
+     newone.className = 'centent'
+     newone.classList.add('global')
+     newone.innerHTML = newitem
+     orginal.appendChild(newone)
+     let btn = document.querySelector('.buttons')
+     
+
+     let newbtn = btn.cloneNode(true)
+     newbtn.classList.add('globalbtn')
+
+     let newplus = newbtn.querySelector('.plus0')
+     let newmin = newbtn.querySelector('.min0')
+     let count = newbtn.querySelector('.count0')
+
+     newplus.classList.remove('plus0')
+     newplus.classList.add(`plus${yop}`)
+     count.classList.remove('count0')
+     count.classList.add(`count${yop}`)
+     newmin.classList.remove('min0')
+     newmin.classList.add(`min${yop}`)
+     orginal.appendChild(newbtn)
+     ++yop
+})
+ scrolcontex.appendChild(inside)
+  //  inside.addEventListener('click',()=>{
+  //    let modul = document.querySelector(".modul")
+  //    modul.classList.remove('pop')
+  //    let newitem = elm
+  //    newitem.quantity = 1 
+  //    newlist.push(newitem)
+  //    let orginal = document.querySelector('.cardin')
+  //    let newone = document.createElement('div')
+  //    newone.className = 'centent'
+  //    let new2 = document.createElement('div')
+  //    new2.className = 'buttons'
+  //    newone.innerHTML = `<h3 class="content">Name : ${elm.name} price : ${elm.price} DH</h3> `
+  //    new2.innerHTML = `
+  //       <div class="buttons"><button class="plus">+</button><s="count">0</span><button class="min">-</button></div>
+  //    `
+  //    orginal.appendChild(newone)
+  //    orginal.appendChild(new2)
     
 }
-)
-}
 
-// add to list 
-// git the perent elm where we will  add my elm
+
+const searchinput = document.querySelector("[search-input]")
+searchinput.addEventListener("input", e => {
+    let value = e.target.value
+    coffeeProducts.forEach(sch => {
+      const valid = sch.name.includes(value)
+      console.log(valid,value)
+      hidig = document.querySelector(`.${sch.class}`)
+      console.log(hidig)
+      hidig.classList.toggle("hide",!valid)
+    })
+
+})
