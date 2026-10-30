@@ -5,8 +5,8 @@ function min_and_plus(){
      let count = allonelmbtn[i].querySelector(`.count${i}`)
      let plus = allonelmbtn[i].querySelector(`.plus${i}`)
      let newcnt = Number(count.textContent)
-     console.log(count)
-     console.log(plus)
+    //  console.log(count)
+    //  console.log(plus)
      plus.addEventListener("click",()=>{
         count.innerHTML = ++newcnt
      })

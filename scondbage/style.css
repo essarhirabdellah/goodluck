@@ -123,6 +123,8 @@ span{
    justify-self: end;
 } */
 form{
+    /* display: none; */
+    padding: 10px;
     width: 80vw;
     height: 30vh;
     background-color: #f7faf7;
@@ -131,10 +133,38 @@ form{
     grid-template-rows: 1fr 1fr;
     gap: 0px;
     position: fixed;
-    bottom: 50px;
+    bottom: 50vh;
     justify-self: center;
     align-self: center;
+    box-shadow: 1px 3px 8px black ;
+    border-radius: 5px;
 }
-.date {
-    
+.numbercard {
+    grid-column: 1/3;
+    width: 100%;
+}
+.numbercard>input{
+    width: 100%;
+    height: 30%;
+}
+.Expiration-date>input{
+  width: 90%;
+  height: 30%;
+}
+.Security-code>input{
+   width: 100%;
+   height: 30%;
+}
+.submit>input {
+  background-color: #394B32;
+  border-radius: 5px;
+  border: none;
+  padding: 10px;
+  color: #f7faf7;
+}
+.debtcard{
+    display: none;
+}
+.debtcard.open {
+    display: block;
 }
