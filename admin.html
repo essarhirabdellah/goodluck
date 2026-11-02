@@ -3,9 +3,90 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+   <link href="https://cdn.jsdelivr.net/npm/bootstrap@6.0.0-alpha.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-B/GM4XqrwHnWXNOWMbloTmrYXZg10cakYGmpfsR/bbzQ6JAJI4ihuyADKLnBgrCe" crossorigin="anonymous">
+<script type="module" src="https://cdn.jsdelivr.net/npm/bootstrap@6.0.0-alpha.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-1a/pXj49ZQ1aHEmrJ+gMw1otqoVsYwlEnlD8mIfY2TV03r20Y0CN7uqx1tQogjPL" crossorigin="anonymous"></script>
+    <title>Add prodacts</title>
 </head>
 <body>
-    
+    <nav class="nav  d-flex gap-2 align-items-center justify-content-center" style="padding: 10px;">
+         <span class="text-black-50 rounded-circle  border border-3    align-items-center d-flex justify-content-center border-primary " style="width: 50px; height: 50px; ">step 1</span>
+             <span  class="fg-primary">_____________</span> 
+         <span class="text-black-50 text-black-50 rounded-circle  border border-3  border-black-50 d-flex align-items-center justify-content-center " style="width: 50px; height: 50px; ">step 2</span> 
+         <span  class="text-black-50">_____________</span>
+         <span class="text-black-50 text-black-50 rounded-circle  border border-3  border-black-50  d-flex align-items-center justify-content-center " style="width: 50px; height: 50px;">Step 3</span>
+    </nav>
+    <form action="" style="padding: 20px;" >
+          <div class="form-field" step-one>
+  <label for="fieldText" class="form-label">Name of the prodact:</label>
+  <input type="text" class="form-control" id="fieldText" placeholder="cappucno">
+  <label for="price" class="form-label">price in DH:</label>
+  <div class="d-flex">
+ <span class="input-group-text">DH</span>
+  <input type="number" class="form-control" id="price" >
+  </div>
+  <label for="fieldTextarea" class="form-label">Descreption:</label>
+  <textarea class="form-control" id="fieldTextarea" rows="3"></textarea>
+  <div class="form-text">
+    Be sure to include relevant details.
+  </div>
+  <label for="imageUpload" class="form-label">Prodact picture:</label>
+  <input type="file" id="imageUpload" name="image" class="form-control"  accept="image/*">    
+          </div>
+        <div step-two style="display: none;">
+       <button class="form-control combobox-toggle" type="button"
+      data-bs-toggle="combobox"
+      data-bs-name="option"
+      data-bs-placeholder="Select an size…">
+  <span class="combobox-value">Select an size…</span>
+  <svg class="combobox-caret" width="10" height="16" viewBox="0 0 10 16" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M0.46967 5.46967C0.762563 5.17678 1.23744 5.17678 1.53033 5.46967L5 8.93934L8.46967 5.46967C8.76256 5.17678 9.23744 5.17678 9.53033 5.46967C9.82322 5.76256 9.82322 6.23744 9.53033 6.53033L5.53033 10.5303C5.23744 10.8232 4.76256 10.8232 4.46967 10.5303L0.46967 6.53033C0.176777 6.23744 0.176777 5.76256 0.46967 5.46967Z" fill="currentcolor"/></svg>
+</button>
+<div class="menu">
+  <button class="menu-item" type="button" data-bs-value="1">small</button>
+  <button class="menu-item" type="button" data-bs-value="2">miduam</button>
+  <button class="menu-item" type="button" data-bs-value="3">big</button>
+</div>
+<div class="form-field d-flex ">
+    <span  class="form-label">temperature :</span><br>
+  <input class="radio" name="radios" type="radio" id="radioLabel" />
+  <label for="radioLabel" class="form-label">hot</label>
+  <input class="radio" name="radios" type="radio" id="radioLabel2" />
+  <label for="radioLabel2" class="form-label">ice</label>
+</div>
+<label for="fieldText1" class="form-label">country origin:</label>
+  <input type="text" class="form-control" id="fieldText1" placeholder="Moroco">
+  
+<div class="form-field d-flex">
+    <span class="form-label">milk type :</span>
+  <input class="radio" name="radios" type="radio" id="radioLabe3" />
+  <label for="radioLabe3" class="form-label">Cow</label>
+  <input class="radio" name="radios" type="radio" id="radioLabel4" />
+  <label for="radioLabel4" class="form-label"> Oats</label>
+  <input class="radio" name="radios" type="radio" id="radioLabe5" />
+  <label for="radioLabe5" class="form-label">Soy</label>
+  <input class="radio" name="radios" type="radio" id="radioLabel6" />
+  <label for="radioLabel6" class="form-label">Almond</label>
+</div>
+<label for="rangeBubble" class="form-label">intencity :</label>
+<div class="form-range" data-bs-bubble>
+  <input type="range" class="form-range-input" min="0" max="10" value="5" id="rangeBubble"><br></div>
+<input type="checkbox" id="check" class="check"/>
+<label for="check" class="form-label">discount</label>
+  <div>
+<label for="rangeBubble" class="form-label">Percentage:</label>
+<div class="form-range" data-bs-bubble>
+  <input type="range" class="form-range-input" min="0" max="100" value="20" id="rangeBubble"><br>
+  <label for="datepicker1" class="form-label">Diathline:</label>
+<input type="text" class="form-control w-12" id="datepicker1" data-bs-toggle="datepicker" autocomplete="off" placeholder="Choose date…">
+</div>
+  </div>
+        </div>
+    </form>
+    <div class="d-flex justify-content-between">
+        <button type="button" class="btn-subtle theme-primary" back>back</button>
+        <button type="button" class="btn-outline theme-primary" next>Next</button> 
+    </div>
 </body>
+<script src="admin.js">
+
+</script>
 </html>
