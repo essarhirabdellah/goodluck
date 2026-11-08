@@ -30,7 +30,8 @@ function actiion_1() {
    step2.classList.add("border-primary")
    let line2 = document.querySelector("[line2]")
    line2.classList.add("fg-primary")
-   
+    let last = document.querySelector("[finle]")
+      last.style.display = "block"
       let step1_block = document.querySelector("[step-one]")
       step1_block.style.display = "none"
       next.style.display = "none"
@@ -40,6 +41,8 @@ function actiion_1() {
       let step2_btn2 = document.querySelector("[next2]")
       step2_btn.style.display = "block"
       step2_btn2.style.display = "block"
+      let new_card1 = document.querySelector("[finle]")
+   new_card1.style.display = "none"
 
 
 
@@ -223,7 +226,9 @@ btn_no3.addEventListener("click",() => {
       btn_3.style.display = "none"
       btn_no3.style.display = "none"
       let last = document.querySelector("[finle]")
-        last.style.display = "none"
+      last.style.display = "none"
+      let showcards = document.querySelector("[showcards]")
+      showcards.style.display = "none"
       
    actiion_1()
 })
@@ -252,11 +257,15 @@ btn__no3.addEventListener("click",function () {
       text: "You card has been added!",
      icon: "success"
 }); 
-    let new_card = document.querySelector("[finle]").cloneNode(true)
+   let new_card = document.querySelector("[finle]").cloneNode(true)
+   let new_card1 = document.querySelector("[finle]")
+   new_card1.innerHTML = ""
     new_card.querySelector("input").remove()
     let showcards = document.querySelector("[showcards]")
     showcards.append(new_card)
-    showcards.style.display = "grid"
+    showcards.style.display = "grid" 
+   //  document.querySelector("[finle]").remove()
+   
    }
    else{
       Swal.fire({
